@@ -1,5 +1,8 @@
 # nginx\_resources cookbook changelog
 
+## v0.6.0
+* Update the source config for openssl to version 1.0.2l
+
 ## v0.5.2
 * Resolve typo in healthcheck template
 
