@@ -1,5 +1,8 @@
 # nginx\_resources cookbook changelog
 
+## v0.7.0
+* Adding text/html mime-type as default compression type
+
 ## v0.6.0
 * Update the source config for openssl to version 1.0.2l
 
