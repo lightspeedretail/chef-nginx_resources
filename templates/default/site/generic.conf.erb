@@ -11,8 +11,14 @@ server {
 
   <%# @configs = hash of nginx params %>
   <% if @configs %>
-  <% @configs.each do |k,v| %>
-  <%= nginx_param(k, v) %>
+  <% @configs.each do |name, value| %>
+  <% if value.is_a?(Array)  %>
+  <% value.each do |value_item| %>
+  <%= nginx_param(name, value_item) %>
+  <% end %>
+  <% else %>
+  <%= nginx_param(name, value) %>
+  <% end %>
   <% end %>
 
   <% end %>
@@ -26,13 +32,19 @@ server {
   <%# @content = unprocessed user-specified string to insert %>
   <% if @content %>
   <%= @content %>
-
   <% end %>
+
   <%# @locations = array of hashes defining location blocks %>
   <% @locations.each do |hash| %>
   location <%= hash['uri'] %> {
     <% Hash(hash['configs']).each do |k,v| %>
+    <% if v.is_a?(Array) %>
+    <% v.each do |v_item| %>
+    <%= k %> <%= v_item %>;
+    <% end %>
+    <% else %>
     <%= k %> <%= v %>;
+    <% end %>
     <% end %>
     <% if hash['try_files'] %>
     try_files <%= hash['try_files'] %>;

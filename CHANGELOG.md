@@ -1,5 +1,9 @@
 # nginx\_resources cookbook changelog
 
+## v0.8.0
+* Site configs now supports arrays for configs and locations[].configs. This is especially useful for adding multiple values with the same key.
+* text/html is enabled by default in the gzip module, removing duplicate entry and resulting warning.
+
 ## v0.7.0
 * Adding text/html mime-type as default compression type
 

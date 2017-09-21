@@ -21,7 +21,6 @@ default['nginx_resources']['gzip']['config'].tap do |config|
     application/javascript
     application/json
     text/mathml
-    text/html
   ).join(' ')
   config['gzip_vary'] = 'off'
 end
