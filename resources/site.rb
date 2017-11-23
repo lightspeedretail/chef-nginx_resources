@@ -38,6 +38,12 @@ property :listen_params,
     node['nginx_resources']['site']['listen_params'].to_hash
   }
 
+# Enable or disable server version banner
+# @since 0.1.0
+property :server_tokens,
+  kind_of: String,
+  default: 'on'
+
 # List of files to include within the configuration
 # @since 0.1.0
 property :includes,

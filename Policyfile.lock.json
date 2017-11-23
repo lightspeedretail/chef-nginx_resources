@@ -1,20 +1,20 @@
 {
-  "revision_id": "ee8fe6c27a40cbae3a5086fdebbb7647bd5153ff47ce09f74e9eb2b0a35a2fb8",
+  "revision_id": "bab0448efbc9e8b791e3292f4e51ab52f86fbf04fab5bce44f5069030bda8202",
   "name": "nginx_resources",
   "run_list": [
     "recipe[nginx_resources::default]"
   ],
   "cookbook_locks": {
     "nginx_resources": {
-      "version": "0.8.0",
-      "identifier": "d4a44c6db759cfaf7111f84f5f13bea4e70eedac",
-      "dotted_decimal_identifier": "59853343227861455.49382442918698771.209615460429228",
+      "version": "0.9.0",
+      "identifier": "173b3194edf85592ccf57843d8726dd739b52a83",
+      "dotted_decimal_identifier": "6539008602404949.41320701256521842.120771153570435",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "git@github.com:lightspeedretail/chef-nginx_resources.git",
-        "revision": "6cae62367a2586005817ac3a2e1edc85496a7319",
+        "remote": "https://github.com/lightspeedretail/chef-nginx_resources",
+        "revision": "713a2c120c33f8e6df9da214712672cac808081b",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -82,14 +82,14 @@
       }
     },
     "windows": {
-      "version": "3.1.3",
-      "identifier": "d28ddeaba824872ca3ff774bcc02a65b434b6d5f",
-      "dotted_decimal_identifier": "59265732611417223.12565216588712962.182910901251423",
-      "cache_key": "windows-3.1.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.1.3/download",
+      "version": "3.4.0",
+      "identifier": "87c1fdbbe457508f735712541c1dcdc02081ca33",
+      "dotted_decimal_identifier": "38212417379129168.40377739476474909.226225062791731",
+      "cache_key": "windows-3.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.4.0/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.1.3/download",
-        "version": "3.1.3"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/3.4.0/download",
+        "version": "3.4.0"
       }
     },
     "ohai": {
@@ -138,7 +138,7 @@
       ],
       [
         "windows",
-        "= 3.1.3"
+        "= 3.4.0"
       ],
       [
         "ohai",
@@ -146,6 +146,16 @@
       ]
     ],
     "dependencies": {
+      "nginx_resources (0.9.0)": [
+        [
+          "build-essential",
+          "~> 6.0.0"
+        ],
+        [
+          "apt",
+          ">= 0.0.0"
+        ]
+      ],
       "build-essential (6.0.6)": [
         [
           "seven_zip",
@@ -178,7 +188,7 @@
       "compat_resource (12.19.0)": [
 
       ],
-      "windows (3.1.3)": [
+      "windows (3.4.0)": [
         [
           "ohai",
           ">= 4.0.0"
@@ -186,16 +196,6 @@
       ],
       "ohai (5.2.0)": [
 
-      ],
-      "nginx_resources (0.8.0)": [
-        [
-          "build-essential",
-          "~> 6.0.0"
-        ],
-        [
-          "apt",
-          ">= 0.0.0"
-        ]
       ]
     }
   }
