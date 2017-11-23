@@ -1,6 +1,6 @@
 # nginx\_resources cookbook changelog
 
-## v0.8.0
+## v0.9.0
 * Added server_tokens property (defaults to on).
 
 ## v0.8.0
