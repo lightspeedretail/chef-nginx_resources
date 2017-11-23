@@ -1,5 +1,5 @@
 {
-  "revision_id": "bab0448efbc9e8b791e3292f4e51ab52f86fbf04fab5bce44f5069030bda8202",
+  "revision_id": "bb268bf0d8dc9d4a0069a5c79465e673750e0e6e61cb3787514eb1154707cc65",
   "name": "nginx_resources",
   "run_list": [
     "recipe[nginx_resources::default]"
@@ -7,19 +7,18 @@
   "cookbook_locks": {
     "nginx_resources": {
       "version": "0.9.0",
-      "identifier": "173b3194edf85592ccf57843d8726dd739b52a83",
-      "dotted_decimal_identifier": "6539008602404949.41320701256521842.120771153570435",
+      "identifier": "9be9af978eebb8b228ce9a1b229a43c005aa5582",
+      "dotted_decimal_identifier": "43885561761426360.50147413668340378.74492007830914",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "https://github.com/lightspeedretail/chef-nginx_resources",
-        "revision": "713a2c120c33f8e6df9da214712672cac808081b",
+        "remote": "git@github.com:lightspeedretail/chef-nginx_resources.git",
+        "revision": "2b47715fc6051669cd5603b6bd1261af5e4b3696",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
-          "origin/master"
+
         ]
       },
       "source_options": {
@@ -146,16 +145,6 @@
       ]
     ],
     "dependencies": {
-      "nginx_resources (0.9.0)": [
-        [
-          "build-essential",
-          "~> 6.0.0"
-        ],
-        [
-          "apt",
-          ">= 0.0.0"
-        ]
-      ],
       "build-essential (6.0.6)": [
         [
           "seven_zip",
@@ -196,6 +185,16 @@
       ],
       "ohai (5.2.0)": [
 
+      ],
+      "nginx_resources (0.9.0)": [
+        [
+          "build-essential",
+          "~> 6.0.0"
+        ],
+        [
+          "apt",
+          ">= 0.0.0"
+        ]
       ]
     }
   }
