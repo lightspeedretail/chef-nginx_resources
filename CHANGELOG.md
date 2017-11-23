@@ -1,5 +1,8 @@
 # nginx\_resources cookbook changelog
 
+## v0.9.0
+* Added server_tokens property (defaults to on).
+
 ## v0.8.0
 * Site configs now supports arrays for configs and locations[].configs. This is especially useful for adding multiple values with the same key.
 * text/html is enabled by default in the gzip module, removing duplicate entry and resulting warning.
