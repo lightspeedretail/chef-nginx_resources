@@ -164,6 +164,7 @@ action_class do
       'listen' => new_resource.listen,
       'listen_params' => new_resource.listen_params,
       'server_name' => new_resource.server_name,
+      'server_tokens' => new_resource.server_tokens,
       'includes' => new_resource.includes,
       'root' => new_resource.root,
       'locations' => new_resource.locations
