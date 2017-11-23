@@ -1,24 +1,26 @@
 {
-  "revision_id": "bb268bf0d8dc9d4a0069a5c79465e673750e0e6e61cb3787514eb1154707cc65",
+  "revision_id": "e50d5510d7ff0e404493cf6868fa5d42dd58825d0d0007d2f94192b384380766",
   "name": "nginx_resources",
   "run_list": [
     "recipe[nginx_resources::default]"
   ],
   "cookbook_locks": {
     "nginx_resources": {
-      "version": "0.9.0",
-      "identifier": "9be9af978eebb8b228ce9a1b229a43c005aa5582",
-      "dotted_decimal_identifier": "43885561761426360.50147413668340378.74492007830914",
+      "version": "0.9.1",
+      "identifier": "6c32021367183072164dea00d3d64ac21441f49c",
+      "dotted_decimal_identifier": "30454281981597744.32112671239230422.82197423977628",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:lightspeedretail/chef-nginx_resources.git",
-        "revision": "2b47715fc6051669cd5603b6bd1261af5e4b3696",
+        "revision": "e4d311450bcaed4616c7249c833804596805c4ec",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/DO-3556",
+          "origin/HEAD -> origin/master",
+          "origin/master"
         ]
       },
       "source_options": {
@@ -186,7 +188,7 @@
       "ohai (5.2.0)": [
 
       ],
-      "nginx_resources (0.9.0)": [
+      "nginx_resources (0.9.1)": [
         [
           "build-essential",
           "~> 6.0.0"

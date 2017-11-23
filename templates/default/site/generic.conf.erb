@@ -5,6 +5,7 @@ server {
   <% @listen.each do |listen_port| %>
   <%= nginx_param('listen', listen_port, 'params' => @listen_params) %>
   <% end %>
+  server_tokens <%= @server_tokens %>;
   <%# document root %>
   root <%= @root %>;
   set $classification <%= @classification || @name %>;
