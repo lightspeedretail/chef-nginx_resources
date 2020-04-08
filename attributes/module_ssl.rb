@@ -8,7 +8,7 @@ default['nginx_resources']['ssl'].tap do |config|
 end
 
 default['nginx_resources']['ssl']['module'].tap do |config|
-  config['source'] = 'https://www.openssl.org/source/openssl-1.0.2l.tar.gz'
+  config['source'] = 'https://www.openssl.org/source/old/1.0.2/openssl-1.0.2l.tar.gz'
   config['version'] = '1.0.2l'
   config['checksum'] = 'ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c'
 end

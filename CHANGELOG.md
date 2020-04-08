@@ -1,6 +1,7 @@
 # nginx\_resources cookbook changelog
 
-## v0.9.2
+## v0.9.3
+* Fixed OpenSSL source url
 * Added server_tokens property (defaults to on).
 
 ## v0.8.0
